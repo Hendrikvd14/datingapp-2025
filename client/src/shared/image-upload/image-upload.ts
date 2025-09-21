@@ -33,6 +33,7 @@ export class ImageUpload {
     if(event.dataTransfer?.files.length) {
       const file = event.dataTransfer.files[0];
       this.previewImage(file);
+      this.fileToUpload = file;
     }
   }
 
